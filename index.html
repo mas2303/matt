@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CORRECTION CRITIQUE : Titre et Description pour le SEO -->
+    <title>Yernaux Terrassement | Expert en travaux de terrassement et aménagement</title>
+    <meta name="description" content="Entreprise de terrassement professionnelle : nivellement, fondations, évacuation de terres. Devis gratuit et intervention rapide.">
+    
+    <!-- Polices professionnelles (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!-- LIEN VERS LE FICHIER CSS EXTERNE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <img src="images/logo.svg" alt="Yernaux Terrassement" class="header-logo-img">
+                </a>
+            </div>
+            <a href="tel:+32495131556" class="phone-desktop btn"> 0495 13 15 56</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Expert en Terrassement & Aménagement</h1>
+            <p>Nivellement, fondations et évacuation de terres. Intervention rapide et devis gratuit pour particuliers et professionnels.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn">Demander mon devis gratuit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Expertises</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>🚜 Terrassement Général</h3>
+                    <p>Préparation de terrain pour construction, nivellement et remblaiement avec précision.</p>
+                </article>
+                <article class="service-card">
+                    <h3>🏗️ Fondations & Tranchées</h3>
+                    <p>Creusement de fondations, tranchées pour raccordements (eau, gaz, électricité).</p>
+                </article>
+                <article class="service-card">
+                    <h3>🏡 Aménagements Extérieurs</h3>
+                    <p>Création de chemins d'accès, parkings, pose de citernes et fosses septiques.</p>
+                </article>
+                <article class="service-card">
+                    <h3>🚛 Évacuation de Terres</h3>
+                    <p>Gestion complète des déblais et évacuation vers les centres agréés.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p style="margin-bottom: 2rem;">Votre projet commence ici. Réponse sous 24h garantie.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <ul>
+                        <!-- REMPLACE CES INFOS PAR LES VRAIES !! -->
+                        <li><strong>Téléphone :</strong> <a href="tel:+32495131556">0495 13 15 56</a></li>
+                        <li><strong>Email :</strong> <a href="mailto:contact@exemple.com"> matteoyernaux.business@gmail.com </a></li>
+                        <li><strong>Zone :</strong> Charleroi et 50km aux alentours</li>
+                        <li><strong>TVA :</strong> BE 1020.814.340</li>
+                    </ul>
+                </div>
+                
+                <!-- Formulaire simplifié -->
+                <form class="contact-form" action="https://formspree.io/f/xbdrqzod" method="POST" id="contact-form">
+                    <input type="text" name="nom" placeholder="Votre nom" required />
+                    <input type="tel" name="telephone" placeholder="Votre numéro de téléphone (Important)" required />
+                    <input type="email" name="email" placeholder="Votre email" required />
+                    <textarea name="message" placeholder="Décrivez votre projet (Lieu, surface, type de travaux)..." required></textarea>
+                    <div id="form-status" class="form-status"></div>
+                    <button type="submit" class="btn" id="submit-btn">Envoyer ma demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark); color: #B0BEC5; padding: 2rem 0; text-align: center; font-size: 0.9rem; border-top: 4px solid var(--primary);">
+        <div class="container">
+            <p>&copy; 2024 Yernaux Terrassement. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <a href="tel:+32495131556" class="mobile-cta">
+        📞 Appeler pour un devis
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
