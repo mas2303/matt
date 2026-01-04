@@ -172,6 +172,86 @@ header {
     }
 }
 
+/* --- CAROUSEL SECTION --- */
+.carousel-section {
+    padding: 4rem 0;
+    background: var(--light);
+    overflow: hidden;
+}
+.carousel-swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-swiper .swiper-wrapper {
+    align-items: center;
+}
+.carousel-swiper .swiper-slide {
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0.5;
+    transform: scale(0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+.carousel-swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+.carousel-swiper .swiper-slide-prev,
+.carousel-swiper .swiper-slide-next {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+.carousel-swiper .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+/* Boutons de navigation Swiper */
+.carousel-swiper .swiper-button-next,
+.carousel-swiper .swiper-button-prev {
+    background: rgba(255, 102, 0, 0.9);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.carousel-swiper .swiper-button-next:after,
+.carousel-swiper .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+.carousel-swiper .swiper-button-next:hover,
+.carousel-swiper .swiper-button-prev:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+/* Pagination Swiper */
+.carousel-swiper .swiper-pagination {
+    bottom: 0 !important;
+}
+.carousel-swiper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--white);
+    width: 12px;
+    height: 12px;
+    transition: all 0.3s ease;
+}
+.carousel-swiper .swiper-pagination-bullet-active {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: scale(1.2);
+}
+
 /* --- CONTACT SECTION --- */
 .contact {
     padding: 4rem 0;
@@ -307,5 +387,25 @@ footer {
     }
     h2 {
         font-size: 1.5rem;
+    }
+    .carousel-section {
+        padding: 2rem 0;
+    }
+    .carousel-section .container {
+        padding: 0 0.5rem;
+    }
+    .carousel-swiper {
+        padding: 1.5rem 0 3rem;
+        overflow: hidden;
+    }
+    .carousel-swiper .swiper-slide {
+        /* Laisser Swiper gérer la largeur automatiquement */
+    }
+    .carousel-swiper .swiper-slide img {
+        height: 300px;
+    }
+    .carousel-swiper .swiper-button-next,
+    .carousel-swiper .swiper-button-prev {
+        display: none;
     }
 }
